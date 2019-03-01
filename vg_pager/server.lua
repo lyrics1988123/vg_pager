@@ -8,7 +8,7 @@ if args[1] ~= nil then
 		TriggerEvent("InteractSound_SV:PlayOnOne", targetPlayerNetId, "soundfile", 0.6) --0.6 is volume
 		if args[2] ~= nil then
 			local text = args[2]
-			TriggerClientEvent("vg_pager:ShowNotification", targetPlayer, text)
+			TriggerClientEvent("vg_pager:ShowNotification", targetPlayerNetId, text)
 		end
 	end	
 end, false)
